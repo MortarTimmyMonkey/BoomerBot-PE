@@ -34,4 +34,4 @@ async def kick(ctx, user: discord.Member):
 
 
 #THIS MUST BE THIS WAY
-bot.run(os.environ['TOKEN']
+bot.run(os.getenv('TOKEN'))
