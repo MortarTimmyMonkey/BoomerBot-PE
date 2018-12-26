@@ -29,7 +29,7 @@ async def info(ctx, user: discord.Member):
 
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
-    await bot.say(":boot: I kicked, {}. The loser!".format(user.name))
+    await bot.say(":boot: I kicked {}.".format(user.name))
     await bot.kick(user)
 
 
