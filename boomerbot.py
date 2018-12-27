@@ -13,6 +13,7 @@ async def on_ready():
     print ("Ready when you are xd")
     print ("I am running on " + bot.user.name)
     print ("With the ID: " + bot.user.id)
+    await bot.change_presence(game=discord.Game(name="b!help | 2 Servers"))
 
 @bot.command(pass_context=True)
 async def ping(ctx):
