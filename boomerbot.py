@@ -29,8 +29,11 @@ async def info(ctx, user: discord.Member):
 
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
-    await bot.say(":boot: I kicked {}.".format(user.name))
-    await bot.kick(user)
+    if ctx.message.author.server_permissions.kick_members:
+       await bot.say(":boot: I kicked {}.".format(user.name))
+       await bot.kick(user)
+    else:
+       await bot.say("Sorry, You need `Kick members` To use this command!")
 
 
 #THIS MUST BE THIS WAY
