@@ -1,5 +1,4 @@
 #BoomerBot PE
-
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
@@ -36,8 +35,7 @@ async def kick(ctx, user: discord.Member):
     else:
        embed = discord.Embed(
            title = "Oops!",
-           description ="You need KICK MEMBERS permission to do that`
-           KICK MEMBERS permission to do that!"
+           description ="You need KICK MEMBERS permission to do that!"
            colour = discord.Colour.red()
         )
 
