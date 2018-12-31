@@ -19,7 +19,7 @@ async def on_ready():
 async def ping(ctx):
     embed = discord.Embed(
            title = 'Information',
-           description = 'Pong! 555ms'
+           description = 'Pong! 555ms',
            colour = discord.Colour.blue()
            print ("user has pinged")
     )
@@ -36,7 +36,7 @@ async def kick(ctx, user: discord.Member):
     else:
        embed = discord.Embed(
            title = 'Oops!',
-           description ='You need KICK MEMBERS permission to do that!'
+           description ='You need KICK MEMBERS permission to do that!',
            colour = discord.Colour.red()
         )
 
