@@ -21,9 +21,9 @@ async def ping(ctx):
            title = 'Information',
            description = 'Pong! 555ms',
            colour = discord.Colour.blue()
-           print ("user has pinged")
     )
-
+    print ("user has pinged")
+    
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
     if ctx.message.author.server_permissions.kick_members:
