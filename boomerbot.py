@@ -22,7 +22,6 @@ async def ping(ctx):
            description = 'Pong! 555ms',
            colour = discord.Colour.blue()
     )
-    print ("user has pinged")
     
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
