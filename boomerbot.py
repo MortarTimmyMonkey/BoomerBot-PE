@@ -20,7 +20,7 @@ async def ping(ctx):
     pingembed = discord.Embed(
            title = 'Information',
            description = 'Pong! 555ms',
-           colour = discord.Colour.blue()
+           colour = #475a85
     )
     
 @bot.command(pass_context=True)
@@ -29,14 +29,14 @@ async def kick(ctx, user: discord.Member):
        kicksuccessembed = discord.Embed(
            title = 'Information',
            description = 'I kicked {}..format(user.name),
-           colour = discord.Colour.blue()
+           colour = #475a85
        )
        await bot.kick(user)
     else:
        kickmissingembed = discord.Embed(
            title = 'Oops!',
            description ='You need KICK MEMBERS permission to do that!',
-           colour = discord.Colour.red()
+           colour = #475a85
         )
 
 
