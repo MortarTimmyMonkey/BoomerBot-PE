@@ -17,15 +17,15 @@ async def on_ready():
     
 @bot.command(pass_context=True)
 async def ping(ctx):
-    pingembed = discord.Embed(title = "Information", description = 'Pong! 555ms', colour = 475a85)
+    embed = discord.Embed(title = "Information", description = 'Pong! 555ms', colour = 475a85)
     
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
     if ctx.message.author.server_permissions.kick_members:
-       kicksuccessembed = discord.Embed(title = "Information", description = "I kicked {}..format(user.name), colour = 475a85)
+       embed = discord.Embed(title = "Information", description = "I kicked {}..format(user.name), colour = 475a85)
        await bot.kick(user)
     else:
-       kickmissingembed = discord.Embed(title = "Oops!", description = "You need KICK MEMBERS permission to do that!", colour = 475a85)
+       embed = discord.Embed(title = "Oops!", description = "You need KICK MEMBERS permission to do that!", colour = 475a85)
 
 
 #THIS MUST BE THIS WAY
